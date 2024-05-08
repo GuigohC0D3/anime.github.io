@@ -2,6 +2,18 @@
     padding: 0;
     margin: 0;
     font-family: Georgia;
+    box-sizing: border-box;  /* Mudança */
+}
+
+html,
+body {
+    height: 100%;
+    transition: 0.3s;
+}
+
+header {
+    align-items: center;
+    position: relative;
 }
 
 ul {
@@ -119,7 +131,7 @@ a:hover {
 }
 
 #tags-container a {
-    background-color: #ddd;
+    background-color: #918e8e;
     padding: 0.5rem 0.7rem;
     border-radius: 0.3rem;
 }
@@ -142,4 +154,39 @@ a:hover {
     }
 }
 
+input[type="checkbox"] {
+    display: none;
+}
 
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.bi-moon-fill {
+    display: none;
+}
+
+
+/* Dark Mode */
+.dark,
+.dark header {
+    background-color: #263238;
+    color: #fff;
+}
+
+.dark .bi-brightness-low-fill {
+    display: none;
+}
+
+.dark .bi-moon-fill {
+    display: block;
+}
+
+.dark a {
+    color: #fff;
+}
+
+.dark a:hover {
+    color: #37a1f7;
+}
