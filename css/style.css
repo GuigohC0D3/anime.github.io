@@ -8,7 +8,7 @@
 html,
 body {
     height: 100%;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 header {
@@ -111,6 +111,7 @@ a:hover {
 #search-bar input {
     padding: 0.5rem 1rem;
     border: 1px solid #ddd;
+    border-radius: 20px;
 }
 
 #search-bar input[type="submit"] {
@@ -118,6 +119,7 @@ a:hover {
     background-color: #37a1f7;
     color: #fff;
     border: none;
+    border-radius: 18px;
 }
 
 #categories li {
@@ -131,7 +133,7 @@ a:hover {
 }
 
 #tags-container a {
-    background-color: #918e8e;
+    background-color: #7e7878;
     padding: 0.5rem 0.7rem;
     border-radius: 0.3rem;
 }
@@ -171,8 +173,8 @@ input[type="checkbox"] {
 /* Dark Mode */
 .dark,
 .dark header {
-    background-color: #263238;
-    color: #fff;
+    background-color: #000;
+    color: #eeeeee;
 }
 
 .dark .bi-brightness-low-fill {
@@ -184,9 +186,14 @@ input[type="checkbox"] {
 }
 
 .dark a {
-    color: #fff;
+    color: #eeeeee;
 }
 
 .dark a:hover {
     color: #37a1f7;
 }
+
+.dark .author {
+    color: #eeeeee;
+}
+
