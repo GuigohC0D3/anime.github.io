@@ -95,6 +95,7 @@ a:hover {
     padding: 1.5rem;
     border: 1px solid #ddd;
     margin-bottom: 1rem;
+    border-radius: 15px;
 }
 
 #search-bar h4,
