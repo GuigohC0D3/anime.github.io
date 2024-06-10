@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia;
+    box-sizing: border-box;  /* Mudança */
+}
+
+html,
+body {
+    height: 100%;
+    transition: 0.4s;
+}
+
+header {
+    align-items: center;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #37a1f7;
+}
+
+h1 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #3d3d3d;
+}
+#navbar {
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px solid #ddd;
+}
+
+#navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.bi-moon-fill {
+    display: none;
+}
+
+
+/* Dark Mode */
+.dark,
+.dark header {
+    background-color: #000;
+    color: #eeeeee;
+}
+
+.dark .bi-brightness-low-fill {
+    display: none;
+}
+
+.dark .bi-moon-fill {
+    display: block;
+}
+
+.dark a {
+    color: #eeeeee;
+}
+
+.dark a:hover {
+    color: #37a1f7;
+}
+
+.dark .author {
+    color: #eeeeee;
+}
+
+.dark h1 {
+    color: #fff;
+}
